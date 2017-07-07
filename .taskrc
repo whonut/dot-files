@@ -37,3 +37,4 @@ taskd.credentials=FreeCinc\/freecinc_7b4ab29b\/dbd05268-18a3-4ccd-a006-216fd3e4c
 report.unblocked.columns=id,project,tags.count,description.count
 report.unblocked.labels=ID,Project,Tags,Description
 report.next.filter=status:pending limit:page +UNBLOCKED
+default.command=ready
