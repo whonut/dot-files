@@ -27,7 +27,7 @@ data.location=~/.task
 #include /usr/local/Cellar/task/2.5.1/share/doc/task/rc/dark-gray-blue-256.theme
 #include /usr/local/Cellar/task/2.5.1/share/doc/task/rc/solarized-dark-256.theme
 #include /usr/local/Cellar/task/2.5.1/share/doc/task/rc/solarized-light-256.theme
-include /usr/local/Cellar/task/2.5.1/share/doc/task/rc/no-color.theme
+#include /usr/local/Cellar/task/2.5.1/share/doc/task/rc/no-color.theme
 
 taskd.server=freecinc.com:53589
 taskd.key=\/Users\/dylan\/.task\/freecinc_7b4ab29b.key.pem
@@ -36,9 +36,10 @@ taskd.ca=\/Users\/dylan\/.task\/freecinc_7b4ab29b.ca.pem
 taskd.credentials=FreeCinc\/freecinc_7b4ab29b\/dbd05268-18a3-4ccd-a006-216fd3e4cbfa
 report.ready.columns=id,project,tags.count,description.count
 report.ready.labels=ID,Project,Tags,Description
-default.command=ready
+default.command=ready project.not:Someday
 report.checklist.description=Displays only description (for annotation checklists
 report.checklist.columns=id,description
 report.checklist.sort=modified-
 report.checklist.labels=ID,Desc\/Checklist
-report.checklist.filter=status:pending +ANNOTATED
+report.checklist.filter=+ANNOTATED
+color=off
